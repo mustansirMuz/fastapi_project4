@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "779f0fcdb5bbcd281c2e867fbb0a3203206c313eea010bc01d1161dda9c5f2c8"
+            "sha256": "2bdcff74e141718c8d734a3dc8cddba1fb7b316abb5e7a5ef21114a039b48f39"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -16,6 +16,14 @@
         ]
     },
     "default": {
+        "aiofiles": {
+            "hashes": [
+                "sha256:9312414ae06472eb6f1d163f555e466a23aed1c8f60c30cccf7121dba2e53eb2",
+                "sha256:edd247df9a19e0db16534d4baaf536d6609a43e1de5401d7a4c1c148753a1635"
+            ],
+            "index": "pypi",
+            "version": "==23.1.0"
+        },
         "alembic": {
             "hashes": [
                 "sha256:457eafbdc0769d855c2c92cbafe6b7f319f916c80cf4ed02b8f394f38b51b89d",
@@ -379,6 +387,14 @@
             ],
             "index": "pypi",
             "version": "==5.12.0"
+        },
+        "jinja2": {
+            "hashes": [
+                "sha256:31351a702a408a9e7595a8fc6150fc3f43bb6bf7e319770cbc0db9df9437e852",
+                "sha256:6088930bfe239f0e6710546ab9c19c9ef35e29792895fed6e6e31a023a182a61"
+            ],
+            "index": "pypi",
+            "version": "==3.1.2"
         },
         "mako": {
             "hashes": [
