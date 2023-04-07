@@ -72,7 +72,7 @@ def verify_password(plain_password: str, hashed_password: str) -> bool:
     return bcryp_context.verify(plain_password, hashed_password)
 
 
-def authenticate_user(username: str, password: str, db: Session) -> models.Users | bool:
+def authenticate_user(username: str, password: str, db: Session) -> models.Users:
     user = db.query(models.Users).filter(models.Users.username == username).first()
     if not user:
         return False
