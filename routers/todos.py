@@ -25,7 +25,7 @@ logging.basicConfig(
 )
 
 router = APIRouter(
-    prefix="/todos", tags=["todos"], responses={404: {"description": "Not found"}}
+    prefix="/", tags=["todos"], responses={404: {"description": "Not found"}}
 )
 
 models.Base.metadata.create_all(bind=engine)
