@@ -175,3 +175,6 @@ poetry.toml
 
 # logs
 logs/
+
+# test db
+todos_test.db

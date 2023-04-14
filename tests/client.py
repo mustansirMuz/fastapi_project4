@@ -6,11 +6,11 @@ from sqlalchemy.orm import sessionmaker
 from main import app
 from routers.auth import get_db
 
-SQLALCHEMY_DATABASE_URL = (
-    "postgresql+psycopg2://mustansir:12345678@localhost/todos_test"
-)
+SQLALCHEMY_DATABASE_URL = "sqlite:///./todos_test.db"
 
-engine = create_engine(SQLALCHEMY_DATABASE_URL)
+engine = create_engine(
+    SQLALCHEMY_DATABASE_URL, connect_args={"check_same_thread": False}
+)
 TestingSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
 
